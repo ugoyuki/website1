@@ -1,0 +1,6 @@
+.round-btn {
+    border-radius: 50%; /* 丸いボタンに変更 */
+    width: 60px; /* 大きさを大きくする */
+    height: 60px; /* 大きさを大きくする */
+    background-color: #3399FF; /* カラフルなデザインに変更 */
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+   #container {
+     width: 600px;
+     margin: 0 auto;
+     background-color: #edeef3;
+     padding: 15px;
+   }
+   input[type=text], select, textarea {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+   .required {
+     color: red;
+   }
+
+   input[type=button] {
+     width: 100%;
+     background-color: #4267B2;
+     color: white;
+
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     text-align: center;
+   }
+   input[type=submit]:hover {
+     background-color: #4575ce;
+   }
+  </style>
+</head>
+<body>
+<div id="container">
+  <h1 style="text-align: center; font-size: 24px; font-weight: bold;">お問合せフォーム</h1>
+  <form action="mailto:yukizawa.labo@gmail.com" method="post" enctype="text/plain">
+    名前 <span class="required">(必須)</span><br/>
+    <input type="text" name="Name" size="30"><br/><br/>
+    Email <span class="required">(必須)</span><br/>
+    <input type="text" name="Email" size="30"><br/><br/>
+    住所 <span class="required">(必須)</span><br/>
+    <input type="text" name="Address" size="30"><br/><br/>
+    電話番号 <span class="required">(必須)</span><br/>
+    <input type="text" name="Phone Number" size="30"><br/><br/>
+    お問合せ内容 <span class="required">(必須)</span><br/>
+    <textarea name="Inquiry" cols="50" rows="8"></textarea><br/><br/>
+    備考：<br/>
+    <textarea name="Comment" cols="50" rows="5"></textarea><br/><br/>
+    <input type="submit" value="送信する">
+  </form>
+</div>
+</body>
+</html>
